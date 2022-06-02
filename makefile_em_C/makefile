@@ -6,3 +6,4 @@ func.o:
 
 clean:
 	rm -rf *.o *.exe
+

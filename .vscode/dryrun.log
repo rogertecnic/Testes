@@ -1,8 +1,9 @@
-make.exe --dry-run --keep-going --print-directory
-make.exe: Entering directory 'd:/Users/roger/Desktop/TMP/Projetos VSCode/Testes'
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'd:/Users/roger/Desktop/TMP/Projetos-VSCode/Testes'
 echo "comando dentro do escopo de de 'dependencia'"
 echo "executado antes do escopo 'alvo'"
+ 
 echo "comando 1, printa o comando antes de executar"
 echo "comando 2, executa o comando sem printar"
-make.exe: Leaving directory 'd:/Users/roger/Desktop/TMP/Projetos VSCode/Testes'
+make.exe: Leaving directory 'd:/Users/roger/Desktop/TMP/Projetos-VSCode/Testes'
  
