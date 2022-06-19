@@ -5,9 +5,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Jun 02 14:48:19 2022
+# Make data base, printed on Sun Jun 19 17:18:38 2022
 
 # Variables
 
@@ -32,8 +31,7 @@ HOMEDRIVE = C:
 # automatic
 @F = $(notdir $@)
 # automatic
-^D = $(patsubst %/,%,$(pat 
-subst %\,%,$(dir $^)))
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
 CURDIR := d:/Users/roger/Desktop/TMP/Projetos-VSCode/Testes
 # default
@@ -59,7 +57,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-17a3513d-4ffc-4f75-85c0-31c3644ab40c-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-4bd28edc-ab96-482b-8a0b-6b38a8cacac1-sock
 # environment
 VSCODE_CWD = C:\Users\roger\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -83,7 +81,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20648_QNOFURPXORUJTYFS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_23448_PKZYKFVKEBZALXVX
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -105,7 +103,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # makefile (from 'makefile', line 14)
 cmdecho = @echo
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\roger\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = C:\Users\roger\AppData\Roaming\Code\CachedData\4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -155,8 +153,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\57260b45b5ce88ade670d2481a 
-ff797a-1.67.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\57260b45b5ce88ade670d2481aff797a-1.68.0-main-sock
 # environment
 HOMEPATH = \Users\roger
 # environment
@@ -175,6 +172,8 @@ SYSTEMROOT = C:\Windows
 +F = $(notdir $+)
 # environment
 APPDATA = C:\Users\roger\AppData\Roaming
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
 # environment
 TEMP = C:\Users\roger\AppData\Local\Temp
 # environment
@@ -214,11 +213,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 20648
+VSCODE_PID = 23448
 # environment
 USERDOMAIN_ROAMINGPROFILE = NOTE-ROGERIO
 # variable set hash-table stats:
-# Load=102/1024=10%, Rehash=0, Collisions=14/127=11%
+# Load=103/1024=10%, Rehash=0, Collisions=14/128=11%
 
 # Pattern-specific Variable Values
 
@@ -227,25 +226,24 @@ USERDOMAIN_ROAMINGPROFILE = NOTE-ROGERIO
 # Directories
 
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1617976437): 29 files, no impossibilities.
-# . (key d:/Users/roger/Desktop/TMP/Projetos-VSCode/Testes, mtime 1653926687): 8 files, no impossibilities.
+# . (key d:/Users/roger/Desktop/TMP/Projetos-VSCode/Testes, mtime 1654261762): 9 files, no impossibilities.
 # C:\Program Files (x86)\dotnet\ (key C:/Program Files (x86)/dotnet/, mtime 1644233556): 8 files, no impossibilities.
 # C:\Users\roger\AppData\Local\Microsoft\WindowsApps (key C:/Users/roger/AppData/Local/Microsoft/WindowsApps, mtime 1652721375): 13 files, no impossibilities.
-# C:\Program Files\Git\cmd (key C:/Program Files/Gi 
-t/cmd, mtime 1652964779): 8 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1652964779): 8 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1654112468): 62 files, no impossibilities.
 # C:\Users\roger\AppData\Local\GitHubDesktop\bin (key C:/Users/roger/AppData/Local/GitHubDesktop/bin, mtime 1652799948): 4 files, no impossibilities.
 # C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1654108535): 7 files, no impossibilities.
-# C:\Users\roger\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/roger/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652957201): 4 files, no impossibilities.
+# C:\Users\roger\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/roger/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1655300289): 4 files, no impossibilities.
 # C:\Users\roger\AppData\Local\Programs\Python\Python310\ (key C:/Users/roger/AppData/Local/Programs/Python/Python310/, mtime 1652300703): 21 files, no impossibilities.
-# C:\Users\roger\AppData\Local\Programs\Python\Python310\Scripts\ (key C:/Users/roger/AppData/Local/Programs/Python/Python310/Scripts/, mtime 1654028030): 51 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1654191374): 111 files, no impossibilities.
+# C:\Users\roger\AppData\Local\Programs\Python\Python310\Scripts\ (key C:/Users/roger/AppData/Local/Programs/Python/Python310/Scripts/, mtime 1654192522): 51 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1655669518): 111 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1644072358): 155 files, no impossibilities.
 # C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1647476197): 6 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1645464446): 8 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1653046136): 2886 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1654689526): 2886 files, no impossibilities.
 
-# 3381 files, no impossibilities in 17 directories.
+# 3382 files, no impossibilities in 17 directories.
 
 # Implicit Rules
 
@@ -264,8 +262,7 @@ all: alvo
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
-# variable set hash-table st 
-ats:
+# variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 dependencia:
@@ -329,8 +326,7 @@ alvo: dependencia
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
-#  recipe to execute (from  
-'makefile', line 5):
+#  recipe to execute (from 'makefile', line 5):
 	echo "comando 1, printa o comando antes de executar"
 	@echo "comando 2, executa o comando sem printar"
 
@@ -350,14 +346,14 @@ testevar:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (6) / strings = 3351 / storage = 49914 B / avg = 14 B
-# current buf: size = 8174 B / used = 921 B / count = 71 / avg = 12 B
-# other used: total = 41740 B / count = 3280 / avg = 12 B
-# other free: total = 51 B / max = 13 B / min = 5 B / avg = 8 B
+# strcache buffers: 7 (6) / strings = 3352 / storage = 49935 B / avg = 14 B
+# current buf: size = 8174 B / used = 934 B / count = 72 / avg = 12 B
+# other used: total = 41761 B / count = 3280 / avg = 12 B
+# other free: total = 43 B / max = 14 B / min = 2 B / avg = 7 B
 
-# strcache performance: lookups = 3418 / hit rate = 1%
+# strcache performance: lookups = 3419 / hit rate = 1%
 # hash-table stats:
-# Load=3351/8192=41%, Rehash=0, Collisions=1114/3418=33%
-# Finished Make data base on Thu Jun 02 14:48:19 2022
+# Load=3352/8192=41%, Rehash=0, Collisions=1114/3419=33%
+# Finished Make data base on Sun Jun 19 17:18:38 2022
 
  
