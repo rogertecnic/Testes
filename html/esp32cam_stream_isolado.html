@@ -1,0 +1,66 @@
+<!-- 
+    Código extraído e modificado do código html carregado dentro da esp32cam no exeplo
+    "CameraWebServer".
+    O código inicialmente está no arquivo "camera_index.h".
+    Armazenado no array "const uint8_t index_ov2640_html_gz[]"
+    em um formato hexadecimal, para extrair o código html tem-se que converter
+    de hexa para texto UTF-8 usando um site "cyberchef".
+    Para converter do HEX para HTML:
+        remove whitespaces tirando os espaços e linefeeds
+        from hex usando delimitador 0x with comma
+        Gunzip
+    Para converter do html de volta pro hex gzip:
+        Gzip
+        To Hex com Delimiter 0x with comma e Bytes per line 16
+
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esp32 - estream</title>
+
+</head>
+
+
+<body>
+    <div style="text-align: center;">
+        <p id="contador">Quantas clicadas no get still: </p>
+        <button id="get-still">Get Still</button>
+        <figure>
+            <div id="stream-container" class="image-container hidden">
+                <img id="stream" src="" crossorigin>
+            </div>
+        </figure>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function (event) {
+            // var baseHost = document.location.origin
+            var baseHost = "img.jpg"
+            var i = 0;
+            const show = el => {
+                el.classList.remove('hidden')
+            }
+
+            const contador = document.getElementById('contador')
+            const view = document.getElementById('stream')
+            const viewContainer = document.getElementById('stream-container')
+            const stillButton = document.getElementById('get-still')
+
+            stillButton.onclick = () => {
+                i = i + 1
+                // view.src = `${baseHost}/capture?_cb=${Date.now()}`
+                view.src = `${baseHost}`
+                show(viewContainer)
+
+                contador.innerHTML = "Quantas clicadas no get still:" + i
+
+            }
+        })
+    </script>
+</body>
+
+</html>
